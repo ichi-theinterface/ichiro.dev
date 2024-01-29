@@ -1,0 +1,117 @@
+.home-wrapper,
+.logo,
+.blogs,
+.aboutme,
+.connect,
+.others {
+  box-sizing: border-box;
+  border: 2px solid #000;
+
+  background-color: #fff9db; /* or #fff8dc; */
+  color: black;
+  font-family: "Teroxia Demo", sans-serif;
+}
+
+.logo,
+.blogs,
+.aboutme,
+.connect,
+.others {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-size: 18px;
+  transition: background-color 0.5s, font-size 0.5s;
+}
+
+.logo:hover,
+.blogs:hover,
+.aboutme:hover,
+.connect:hover,
+.others:hover {
+  background-color: #f9e864;
+  font-size: 24px;
+}
+
+.home-wrapper {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+}
+
+.logo {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+
+  height: 40%;
+  width: 40%;
+
+  background-color: #f9e864;
+  font-size: 24px;
+}
+
+.blogs {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: auto;
+  right: auto;
+
+  height: 30%;
+  width: 70%;
+}
+
+.aboutme {
+  position: absolute;
+  top: auto;
+  left: 0%;
+  bottom: 0%;
+  right: auto;
+
+  height: 70%;
+  width: 30%;
+}
+
+.connect {
+  position: absolute;
+  top: 0%;
+  left: auto;
+  bottom: auto;
+  right: 0%;
+
+  height: 70%;
+  width: 30%;
+}
+
+.others {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: 0%;
+  right: 0%;
+
+  height: 30%;
+  width: 70%;
+}
+
+.blogs p,
+.aboutme p,
+.connect p,
+.others p {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.blogs:hover p,
+.aboutme:hover p,
+.connect:hover p,
+.others:hover p {
+  opacity: 1;
+  visibility: visible;
+}

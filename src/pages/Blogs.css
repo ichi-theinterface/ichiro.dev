@@ -1,0 +1,148 @@
+.canvas {
+  padding: 20px;
+  background-color: #fff9db;
+  min-height: 100vh; /* Minimum height is 100% of the viewport height */
+  height: auto; /* Adjusts height automatically based on content */
+}
+
+.BlogList-Header-Frame {
+  background-color: #f9e864;
+  padding: 20px;
+
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #000;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  text-align: center; /* Center the content */
+  margin-bottom: 30px; /* Space below the frame */
+  max-width: 1100px;
+  margin-left: auto; /* Automatic margin to the left */
+  margin-right: auto; /* Automatic margin to the right */
+}
+
+.BlogList-Header {
+  color: black;
+  font-family: "Arial", sans-serif; /* Font styling */
+  font-size: 28px; /* Size of the header text */
+  font-weight: bold; /* Make the header text bold */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.blog-post-frame {
+  background-color: #f9e864;
+
+  border: 2px solid #000;
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px; /* Space between cards */
+  height: auto;
+  width: 100%;
+  max-width: 1100px; /* Set a maximum width for the frame */
+  margin: 0 auto; /* Centering the frame if it's placed inside a larger container */
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.blog-post-frame > div:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Blog Post Card */
+.blog-post-cards {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  background-color: #ffffff;
+  transition: box-shadow 0.3s; /* Smooth shadow transition */
+  max-height: 200px;
+}
+
+.blog-title {
+  font-size: 2em; /* Large font size for a title */
+  font-weight: bold; /* Bold font weight for emphasis */
+  margin-top: 20px; /* Some margin at the top for spacing */
+  margin-bottom: 15px; /* Some margin at the bottom for spacing */
+  color: #ffffff; /* A dark grey color for the text */
+  text-transform: uppercase; /* Making the text uppercase for stylistic choice */
+  letter-spacing: 1px; /* Slight letter spacing for aesthetic */
+  line-height: 1.2; /* Ensuring the title has a good line-height if it wraps */
+}
+
+.blog-content {
+  font-size: 1em; /* Standard font size for content */
+  color: #777777; /* A softer grey color for readability */
+  margin-top: 10px; /* Some margin at the top for spacing */
+  margin-bottom: 20px; /* A bit more space at the bottom to separate from other contents or elements */
+  line-height: 1.6; /* Improved line-height for readability */
+  text-align: justify; /* Text alignment for a polished look */
+  word-spacing: 0.5px; /* Slight word spacing to improve reading flow */
+  font-family: "Arial", sans-serif; /* Using Arial or a sans-serif font for content */
+}
+
+/* Main container style */
+.markdown {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  max-width: 700px;
+}
+
+/* Style for headers */
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.markdown h1 {
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+
+.markdown h2 {
+  font-size: 1.75em;
+}
+
+/* ... similarly for h3, h4, etc. if needed */
+
+/* Style for links */
+.markdown a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+/* Style for code blocks */
+.markdown code {
+  display: block; /* Ensures block-level display */
+  font-family: "Courier New", monospace;
+  background-color: #f0f0f0;
+  padding: 2px 5px;
+  border-radius: 3px;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: pre; /* Keeps text from wrapping */
+  max-width: 100%; /* Restricts the width to the parent container's width */
+}
+
+/* Style for blockquote */
+.markdown blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 10px;
+  color: #777;
+}

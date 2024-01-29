@@ -1,0 +1,72 @@
+.connect-canvas {
+  background-color: #fff9db;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  display: flex;
+  justify-content: space-around;
+
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* temp. need to make the size responsive */
+  width: 500px;
+  height: 300px;
+}
+
+.linkedin-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.github-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin-button,
+.github-button {
+  padding: 30px;
+  background-color: #fffdf4;
+
+  border-radius: 20px;
+  border: 2px solid #b4acac;
+
+  transition: background-color 2s ease, padding 0.8s ease;
+}
+
+.linkedin-button:hover,
+.github-button:hover {
+  background-color: #f9e864;
+  padding: 40px;
+}
+
+.back-to-home {
+  margin-top: 50px;
+  font-size: 24px;
+
+  font-family: "Teroxia Demo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: none;
+
+  font-family: "Teroxia Demo", sans-serif;
+}

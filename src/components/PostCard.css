@@ -1,0 +1,44 @@
+.PostCardFrame {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax values as needed */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the grid */
+  justify-content: center; /* Centers the grid horizontally */
+  align-content: center; /* Centers the grid vertically */
+  width: 100%; /* Sets the width to take the full available width */
+  margin: 0 auto; /* Centers the entire element horizontally */
+}
+
+.blog-post-cards {
+    background-color: #f8f8f8; /* Light background for the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures content fits within the borders */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    min-height: 400px; /* Default minimum height */
+}
+
+.blog-post-cards:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.blog-post-cards img {
+  width: 100%; /* Full-width image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.blog-post-cards p {
+  padding: 15px; /* Padding inside the card for text */
+  margin: 0; /* Remove default margin */
+  font-size: 1em; /* Font size for the title */
+  color: #333;
+}
+
+.blog-post-title {
+  font-size: 1em; /* Adjust font size as needed */
+  color: #333; /* Text color */
+  margin: 10px 15px; /* Margin for spacing */
+  /* Additional styles can be added here if needed */
+}
+
